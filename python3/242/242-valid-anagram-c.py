@@ -10,4 +10,4 @@ class Solution:
         if len(s) != len(t):
             return False
 
-        return Counter(s) == Counter(t)
+        return collections.Counter(s) == collections.Counter(t)
