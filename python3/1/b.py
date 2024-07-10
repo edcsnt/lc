@@ -5,18 +5,18 @@
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        l = 0
-        r = len(nums) - 1
+        i = 0
+        j = len(nums) - 1
         snums = sorted(nums)
 
-        while l < r:
-            total = snums[l] + snums[r]
+        while i < j:
+            total = snums[i] + snums[j]
             if total == target:
-                res = [nums.index(snums[l]), nums.index(snums[r])]
+                res = [nums.index(snums[i]), nums.index(snums[j])]
                 if res[0] == res[1]:
-                    res[1] = nums.index(snums[r], res[0] + 1)
+                    res[1] = nums.index(snums[j], res[0] + 1)
                 return res
             elif total < target:
-                l += 1
+                i += 1
             else:
-                r -= 1
+                j -= 1
