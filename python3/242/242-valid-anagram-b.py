@@ -13,13 +13,7 @@ class Solution:
         count = {}
 
         for i, c in enumerate(s):
-            if count.get(c) is not None:
-                count[c] += 1
-            else:
-                count[c] = 1
-            if count.get(t[i]) is not None:
-                count[t[i]] -= 1
-            else:
-                count[t[i]] = -1
+            count[c] = count.get(c, 0) + 1
+            count[t[i]] = count.get(t[i], 0) - 1
 
         return not any(count.values())
