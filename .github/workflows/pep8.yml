@@ -2,7 +2,7 @@
 name: pep8
 on: [pull_request, push]
 env:
-  PYTHON_VERSION: 3.12.4
+  PYTHON_VERSION: "3.12.4"
 jobs:
   flake8:
     runs-on: ubuntu-latest
@@ -13,6 +13,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "🐍 Setting up Python $PYTHON_VERSION…"
+      - run: "$PYTHON_VERSION"
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
