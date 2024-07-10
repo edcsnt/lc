@@ -6,12 +6,17 @@
   <br>
 </h1>
 
-<h4 align="center">Solutions to LeetCode problems written in Python 3.</h4>
+<h4 align="center">Solutions to LeetCode problems written in Python 3</h4>
 
-The algorithm or technique used, time and space complexities, and optimality are given as comments at the top of each file. Optimality always favors time.
+The algorithm or technique used, time complexity, auxiliary space, and
+optimality are given as comments at the top of each file. Optimality always
+favors time.
 
 > [!NOTE]
-> [Binary logarithms](https://en.wikipedia.org/wiki/Binary_logarithm) are notated $\mathop{{}^{}\mathrm{lb}} x$ (e.g., `n lb n`) in compliance with [ISO 80000-2:2019](https://www.iso.org/standard/64973.html).
+> [Binary logarithms](https://en.wikipedia.org/wiki/Binary_logarithm), as in
+> [logarithmic time](https://en.wikipedia.org/wiki/Time_complexity#Logarithmic_time),
+> are notated $\mathop{{}^{}\mathrm{lb}} x$ (e.g., `lb n`) in compliance with
+> [ISO 80000-2:2019](https://www.iso.org/standard/64973.html).
 
 ## 🧩 Solved
 

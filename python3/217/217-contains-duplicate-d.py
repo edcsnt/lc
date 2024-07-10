@@ -1,7 +1,7 @@
 # Programming language: Python 3
 # Algorithm/technique:  set
 # Time complexity:      O(n)
-# Space complexity:     O(n)
+# Auxiliary space:      O(n)
 # Optimal:              yes
 # Notes:
 

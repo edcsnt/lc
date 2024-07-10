@@ -1,7 +1,7 @@
 # Programming language: Python 3
 # Algorithm/technique:  sorting
 # Time complexity:      O(n lb n)
-# Space complexity:     O(1)
+# Auxiliary space:      O(1)
 # Optimal:              no
 # Notes:
 
