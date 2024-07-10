@@ -5,8 +5,10 @@
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        n = len(nums)
+        n: int = len(nums)
 
+        i: int
+        j: int
         # enumerate does not allow the last item to be skipped without slicing,
         # which would require linear auxiliary space.
         for i in range(n - 1):

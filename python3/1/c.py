@@ -5,8 +5,11 @@
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        visited = {}
+        visited: dict[int, int] = {}
 
+        i: int
+        num: int
+        diff: int
         for i, num in enumerate(nums):
             diff = target - num
             if diff in visited:

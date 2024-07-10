@@ -10,6 +10,8 @@ class Solution:
 
         nums.sort()
 
+        i: int
+        num: int
         for i, num in enumerate(nums):
             # nums[0] is needlessly compared to nums[-1] so as to avoid
             # checking if i > 0 at every iteration.

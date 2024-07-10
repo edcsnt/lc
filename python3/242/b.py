@@ -8,8 +8,10 @@ class Solution:
         if len(s) != len(t):
             return False
 
-        count = {}
+        count: dict[str, int] = {}
 
+        i: int
+        c: str
         for i, c in enumerate(s):
             count[c] = count.get(c, 0) + 1
             count[t[i]] = count.get(t[i], 0) - 1

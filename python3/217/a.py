@@ -5,10 +5,12 @@
 
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool:
-        n = len(nums)
+        n: int = len(nums)
         if n < 2:
             return False
 
+        i: int
+        j: int
         # enumerate does not allow the last item to be skipped without slicing,
         # which would require linear auxiliary space.
         for i in range(n - 1):
