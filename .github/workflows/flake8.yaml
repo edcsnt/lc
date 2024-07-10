@@ -1,5 +1,4 @@
 ---
-name: pep8
 on: [pull_request, push]
 env:
   PYTHON_VERSION: 3.12.4
