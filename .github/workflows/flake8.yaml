@@ -6,17 +6,14 @@ jobs:
   flake8:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎬 Triggered by ${{ github.event_name }}."
-      - run: echo "🐧 Running on ${{ runner.os }}."
-      - run: echo "⬇️ Cloning ${{ github.repository }}:${{ github.ref_name }}…"
-      - name: Check out repository code
-        uses: actions/checkout@v4
-      - run: echo "🐍 Setting up Python ${{ env.PYTHON_VERSION }}…"
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - run: printf "🎬 Triggered by ${{ github.event_name }}."
+      - run: printf "🐧 Running on ${{ runner.os }}."
+      - run: printf "⬇️ Cloning ${{ github.repository }}:${{ github.ref_name }}…"
+      - uses: actions/checkout@v4
+      - run: printf "🐍 Setting up Python ${{ env.PYTHON_VERSION }}…"
+      - uses: actions/setup-python@v5
         with:
           python-version: "${{ env.PYTHON_VERSION }}"
-      - run: echo "🔎 Linting Python code against PEP 8…"
-      - name: Lint Python code against PEP 8
-        uses: py-actions/flake8@v2
+      - run: printf "🔎 Linting Python code against PEP 8…"
+      - uses: py-actions/flake8@v2
 ...
