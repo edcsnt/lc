@@ -1,9 +1,7 @@
-# Programming language: Python 3
-# Algorithm/technique:  set
-# Time complexity:      O(n)
-# Auxiliary space:      O(n)
-# Optimal:              yes
-# Notes:
+# Algorithm/technique: hash table
+# Time complexity:     O(n)
+# Auxiliary space:     O(n)
+# Optimal:             yes
 
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool:

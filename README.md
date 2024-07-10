@@ -20,6 +20,7 @@ favors time.
 
 ## 🧩 Solved
 
+- [x] 1. Two Sum
 - [x] 217. Contains Duplicate
 - [x] 242. Valid Anagram
 

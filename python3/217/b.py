@@ -1,9 +1,7 @@
-# Programming language: Python 3
-# Algorithm/technique:  sorting
-# Time complexity:      O(n lb n)
-# Auxiliary space:      O(1)
-# Optimal:              no
-# Notes:
+# Algorithm/technique: sorting
+# Time complexity:     O(n lb n)
+# Auxiliary space:     O(1)
+# Optimal:             no
 
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool:

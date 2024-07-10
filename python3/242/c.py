@@ -1,9 +1,7 @@
-# Programming language: Python 3
-# Algorithm/technique:  hash table
-# Time complexity:      O(n)
-# Auxiliary space:      O(n)
-# Optimal:              yes
-# Notes:
+# Algorithm/technique: hash table
+# Time complexity:     O(n)
+# Auxiliary space:     O(n)
+# Optimal:             yes
 
 from collections import Counter
 
