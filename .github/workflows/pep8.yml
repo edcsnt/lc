@@ -12,11 +12,11 @@ jobs:
       - run: echo "⬇️ Cloning ${{ github.repository }}:${{ github.ref_name }}…"
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echo "🐍 Setting up Python $env.PYTHON_VERSION…"
+      - run: echo "🐍 Setting up Python ${{ env.PYTHON_VERSION }}…"
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "$env.PYTHON_VERSION"
+          python-version: "${{ env.PYTHON_VERSION }}"
       - run: echo "🔎 Linting Python code against PEP 8…"
       - name: Lint Python code against PEP 8
         uses: py-actions/flake8@v2
