@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/donjuardo/leetcode/assets/33993373/4a5a0770-db8f-4860-a367-14a773f1c32c" alt="LeetCode logo" width="200">
+  <img src="https://github.com/donjuardo/leetcode/assets/33993373/33312252-390e-42dd-bf16-f6b7594d752f" alt="LeetCode logo" width="200">
   <br>
   <code>donjuardo/leetcode</code>
   <br>
