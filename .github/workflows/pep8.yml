@@ -13,7 +13,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "🐍 Setting up Python $PYTHON_VERSION…"
-      - run: "$PYTHON_VERSION"
+      - run: echo "$PYTHON_VERSION"
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
