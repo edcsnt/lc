@@ -10,7 +10,6 @@ class Solution:
         i: int = 0
         j: int = len(nums) - 1
         total: int
-        res: list[int]
         while i < j:
             total = snums[i][1] + snums[j][1]
             if total == target:
