@@ -8,9 +8,18 @@
 
 <h4 align="center">Solutions to LeetCode problems written in Python 3</h4>
 
-The algorithm or technique used, time complexity, auxiliary space, and
-optimality are given as comments at the top of each file. Optimality always
+The algorithm or technique used, the time complexity, the auxiliary space, and
+the optimality are given as comments at the top of each file. Optimality always
 favors time.
+
+Built-in sorting algorithms from standard libraries are considered to require
+$O(1)$ auxiliary space as
+[heapsort](https://dl.acm.org/doi/pdf/10.1145/512274.512284) exists, even
+though implementations such as Java's `Arrays.sort()`'s
+[dual-pivot quicksort](http://www.kriche.com.ar/root/programming/spaceTimeComplexity/DualPivotQuicksort.pdf)
+and Python's `list.sort()`'s
+[powersort](https://www.wild-inter.net/publications/munro-wild-2018.pdf)
+actually need $O(\mathop{{}^{}\mathrm{lb}} n)$ and $O(n)$ space, respectively.
 
 > [!NOTE]
 > [Binary logarithms](https://en.wikipedia.org/wiki/Binary_logarithm), as in
@@ -21,6 +30,7 @@ favors time.
 ## 🧩 Solved
 
 - [x] 1. Two Sum
+- [x] 49. Group Anagrams
 - [x] 217. Contains Duplicate
 - [x] 242. Valid Anagram
 

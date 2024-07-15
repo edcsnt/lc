@@ -5,11 +5,10 @@
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        snums: list[enumerate] = sorted(enumerate(nums), key=lambda n: n[1])
-
         i: int = 0
         j: int = len(nums) - 1
         total: int
+        snums: list[enumerate] = sorted(enumerate(nums), key=lambda n: n[1])
         while i < j:
             total = snums[i][1] + snums[j][1]
             if total == target:

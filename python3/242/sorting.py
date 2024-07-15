@@ -8,4 +8,4 @@ class Solution:
         if len(s) != len(t):
             return False
 
-        return s.sort() == t.sort()
+        return sorted(s) == sorted(t)

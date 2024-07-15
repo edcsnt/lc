@@ -8,9 +8,8 @@ class Solution:
         if len(nums) < 2:
             return False
 
-        visited: set[int] = set()
-
         num: int
+        visited: set[int] = set()
         for num in nums:
             if num in visited:
                 return True
