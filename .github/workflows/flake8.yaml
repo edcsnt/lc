@@ -1,7 +1,7 @@
 ---
 on: [pull_request, push]
 env:
-  PYTHON_VERSION: >=3.10
+  PYTHON_VERSION: '>=3.10'
 jobs:
   flake8:
     runs-on: ubuntu-latest
