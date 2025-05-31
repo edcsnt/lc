@@ -1,7 +1,7 @@
 ---
 on: [pull_request, push]
 env:
-  PYTHON_VERSION: 3.12.4
+  PYTHON_VERSION: >=3.10
 jobs:
   flake8:
     runs-on: ubuntu-latest
@@ -16,4 +16,3 @@ jobs:
           python-version: "${{ env.PYTHON_VERSION }}"
       - run: printf "🔎 Linting Python code against PEP 8…"
       - uses: py-actions/flake8@v2
-...
