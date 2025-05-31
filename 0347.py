@@ -16,18 +16,19 @@
 #
 
 class Solution:
-    def all_zeros(self, ls: list[int]) -> bool:
-        for i in ls:
-            if i != 0:
-                return False
-        return True
-
-    def isAnagram(self, s: str, t: str) -> bool:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         count = {}
-        try:
-            for c, d in zip(s, t, strict=True):
-                count[c] = count.get(c, 0) + 1
-                count[d] = count.get(d, 0) - 1
-        except ValueError:
-            return False
-        return self.all_zeros(list(count.values()))
+        max_freq = 1
+        res = []
+        for n in nums:
+            count[n] = count.get(n, 0) + 1
+            if count[n] > max_freq:
+                max_freq = count[n]
+        freq = [[] for _ in range(max_freq + 1)]
+        for n, c in count.items():
+            freq[c].append(n)
+        for c in range(max_freq, 0, -1):
+            for n in freq[c]:
+                res.append(n)
+                if len(res) == k:
+                    return res
