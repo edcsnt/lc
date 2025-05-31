@@ -14,5 +14,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "${{ env.PYTHON_VERSION }}"
+          check-latest: true
       - run: printf "🔎 Linting Python code against PEP 8…"
       - uses: py-actions/flake8@v2
