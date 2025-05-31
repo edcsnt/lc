@@ -16,8 +16,8 @@
 #
 
 class Solution:
-    def all_zeros(self, l: list[int]) -> bool:
-        for i in l:
+    def all_zeros(self, ls: list[int]) -> bool:
+        for i in ls:
             if i != 0:
                 return False
         return True
