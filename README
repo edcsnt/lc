@@ -4,10 +4,10 @@ implementations, such as Java's Arrays.sort[2,3]'s dual-pivot
 quicksort[4] and Python's list.sort[5,6]'s powersort[7] actually need
 O(log n).
 
-[1] https://dl.acm.org/doi/pdf/10.1145/512274.3734138
-[2] https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Arrays.html#sort(int%5B%5D)
-[3] https://github.com/openjdk/jdk/blob/c62223a5af747bc5cbdd3d970dd994f74aa08834/src/java.base/share/classes/java/util/DualPivotQuicksort.java#L242-L394
-[4] https://www.kriche.com.ar/root/programming/spaceTimeComplexity/DualPivotQuicksort.pdf
-[5] https://docs.python.org/3/library/stdtypes.html#list.sort
-[6] https://github.com/python/cpython/blob/8e8786f8986353e20c1c4406c34409a6139fa073/Objects/listobject.c#L2874-L3163
-[7] https://www.wild-inter.net/publications/munro-wild-2018.pdf
+[1] <https://dl.acm.org/doi/pdf/10.1145/512274.3734138>
+[2] <https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Arrays.html#sort(int%5B%5D)>
+[3] <https://github.com/openjdk/jdk/blob/c62223a5af747bc5cbdd3d970dd994f74aa08834/src/java.base/share/classes/java/util/DualPivotQuicksort.java#L242-L394>
+[4] <https://www.kriche.com.ar/root/programming/spaceTimeComplexity/DualPivotQuicksort.pdf>
+[5] <https://docs.python.org/3/library/stdtypes.html#list.sort>
+[6] <https://github.com/python/cpython/blob/8e8786f8986353e20c1c4406c34409a6139fa073/Objects/listobject.c#L2874-L3163>
+[7] <https://www.wild-inter.net/publications/munro-wild-2018.pdf>
